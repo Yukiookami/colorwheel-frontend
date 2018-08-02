@@ -142,5 +142,10 @@ export default({
     padding: 6.6px 0;
     width: 5rem;
   }
+
+  .logo-f {
+    height: 300vh;
+    width: 500px;
+  }
 }
 </style>
