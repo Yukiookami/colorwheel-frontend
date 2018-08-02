@@ -80,6 +80,7 @@
         </a>
       </li>
     </ul>
+    <span @clikck="a">sldkfj</span>
   </div>
 </template>
 
@@ -89,6 +90,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  method: {
+    a : function() {
+      console.log($);
     }
   }
 }

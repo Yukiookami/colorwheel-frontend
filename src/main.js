@@ -6,8 +6,11 @@ import newproduct from './components/newproduct'
 import support from './components/support'
 import artist from './components/artist'
 import exhibition from './components/exhibition'
+import './assets/css/bootstrap.min.css'
+import './assets/js/bootstrap.min.js'
 Vue.use(VueRouter)
 Vue.config.productionTip = false
+
 const router = new VueRouter({
   mode: 'history',
   routes: [

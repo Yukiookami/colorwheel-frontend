@@ -64,7 +64,7 @@ export default({
 
 .list-sec,
 .take {
-  height: 9rem;
+  height: 12rem;
 }
 
 .take {
@@ -81,7 +81,7 @@ export default({
 }
 
 .submit input {
-  width: 12.7rem;
+  width: 20.7rem;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border: 1px #919191 solid;
@@ -95,6 +95,7 @@ export default({
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   border: none;
+  border: #353535 solid 1px;
   background-color: #353535;
   color: #FFF;
 }
@@ -110,8 +111,8 @@ export default({
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-right: 5rem;
-  width: 25vw;
+  margin-left: 5rem;
+  width: 30vw;
 }
 
 .list-sec ul {
@@ -120,6 +121,26 @@ export default({
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  height: 7rem;
+  height: 9rem;
+}
+
+@media (max-width: 1200px) {
+  #footer
+   {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .list-sec {
+    justify-content: space-around;
+    margin: 0 0 0 2.5rem;
+    width: 100vw;
+  }
+
+  .submit button {
+    font-size: 12px;
+    padding: 6.6px 0;
+    width: 5rem;
+  }
 }
 </style>
