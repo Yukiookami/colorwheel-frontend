@@ -1,17 +1,17 @@
 <template>
- <div id="footer">
+ <div id="footers">
   <span>footer</span>
  </div>
 </template>
 
 <script>
 export default({
-  name: 'footer'
+  name: 'footers'
 })
 </script>
 
 <style scoped>
- #footer
+ #footers
  {
   height:100px;
   position:fixed;
