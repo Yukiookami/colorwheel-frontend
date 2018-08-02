@@ -2,7 +2,7 @@
 <div id="footer">
   <div class="take">
     <router-link to="/">
-      <img src="../assets/logo-f.png">
+      <img src="../assets/logo-f.png" class="logo-f">
     </router-link>
     <div class="submit">
       <input placeholder="请输入E-mail" type="email"><button>订阅</button>
@@ -141,6 +141,14 @@ export default({
     font-size: 12px;
     padding: 6.6px 0;
     width: 5rem;
+  }
+
+  .logo-f {
+    width: 25.7rem;
+  }
+
+  .take {
+    height: 10rem;
   }
 }
 </style>
