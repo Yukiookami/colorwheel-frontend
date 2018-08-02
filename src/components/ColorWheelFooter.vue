@@ -1,24 +1,29 @@
 <template>
- <div id="footer">
-  <span>footer</span>
- </div>
+<div id="footer">
+  <div>
+    <router-link to="/">
+      <img src="../assets/logo-f.png">
+    </router-link>
+    <div>
+      <input placeholder="请输入E-mail">
+      <button>订阅</button>
+    </div>
+  </div>
+  <div>
+
+  </div>
+</div>
 </template>
- 
+
 <script>
- export default({
+export default({
   name:'footer'
- })
+})
 </script>
- 
+
 <style scoped>
- #footer
- {
-  height:100px;
-  position:fixed;
-  bottom:0px;
-  left: 0px;
-  background-color: #eeeeee;
-  width: 100%;
-  padding-top: 10px;
- }
+#footer {
+  height:331px;
+  background-color: #f8f8f8;
+}
 </style>
