@@ -32,23 +32,45 @@
 </template>
 
 <script>
+export default {
 
+}
 </script>
 
 <style scoped>
- .header{width:100%;margin:0 auto;height:10%;padding:12px 0 18px;position:relative;*z-index:1;background-color: #353535;color:#ffffff;}
- .header .logo{height:30px;width:40px;margin-top:20px;margin-left:180px;}
- .top-nav .navlist-wrap{width:100%;margin:0 auto;position:relative}
- .top-nav .navlist{position:absolute;right:130PX;top:-40PX}
- .top-nav .navlist .nav-btn
- {
-  display:flex;
+.header {
+  width: 100%;
+  margin: 0 auto;
+  height: 10%;
+  padding: 12px 0 18px;
+  position: relative;
+  *z-index: 1;
+  background-color: #353535;
+  color: #ffffff;
+}
+.header .logo {
+  height: 30px;
+  width: 40px;
+  margin-top: 20px;
+  margin-left: 180px;
+}
+.top-nav .navlist-wrap {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.top-nav .navlist {
+  position: absolute;
+  right: 130px;
+  top: -40px;
+}
+.top-nav .navlist .nav-btn {
+  display: flex;
   align-items: flex-start;
-  float:left;
-  margin-left:60px;
-  color:#666;
+  float: left;
+  margin-left: 60px;
+  color: #666;
   vertical-align: middle;
-  text-decoration:none;
-
- }
+  text-decoration: none;
+}
 </style>

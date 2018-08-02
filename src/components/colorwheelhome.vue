@@ -3,13 +3,13 @@
   <h2>主页</h2>
  </div>
 </template>
- 
+
 <script>
- export default({
-  name:'home'
- })
+export default({
+  name: 'home'
+})
 </script>
- 
+
 <style scoped>
  #home{
   width: 100%;

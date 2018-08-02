@@ -5,18 +5,19 @@
     <color-wheel-footer></color-wheel-footer>
   </div>
 </template>
+
 <script>
 import ColorWheelHeader from './components/ColorWheelHeader'
 import ColorWheelFooter from './components/ColorWheelFooter'
 export default {
- name: 'app',
- components: {
-  ColorWheelHeader,
-  ColorWheelFooter
- }
+  name: 'app',
+  components: {
+    ColorWheelHeader,
+    ColorWheelFooter
+  }
 }
 </script>
- 
+
 <style>
 #app {
  -webkit-font-smoothing: antialiased;
