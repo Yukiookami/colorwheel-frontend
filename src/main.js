@@ -6,6 +6,7 @@ import newproduct from './components/newproduct'
 import support from './components/support'
 import artist from './components/artist'
 import exhibition from './components/exhibition'
+import artistdetail from './components/artistdetail'
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 
@@ -16,7 +17,8 @@ const router = new VueRouter({
     {path: '/newproduct', component: newproduct},
     {path: '/support', component: support},
     {path: '/artist', component: artist},
-    {path: '/exhibition', component: exhibition}
+    {path: '/exhibition', component: exhibition},
+    {path: '/artistdetail', component: artistdetail}
   ]
 })
 /* eslint-disable no-new */
