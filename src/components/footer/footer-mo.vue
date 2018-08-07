@@ -1,9 +1,7 @@
 <template>
   <ul class="list">
     <li v-for="(item,index) in content" :key="index">
-      <a href="item.url">
-        {{item.text}}
-      </a>
+      <a :href="item.url" v-html="item.text"></a>
     </li>
   </ul>
 </template>

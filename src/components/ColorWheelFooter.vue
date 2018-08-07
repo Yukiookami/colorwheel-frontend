@@ -24,22 +24,58 @@ export default({
   data: function () {
     return {
       listQ: [
-        {text: '帮助中心', url: ''},
-        {text: '购物指南', url: ''},
-        {text: '物流售后问题', url: ''},
-        {text: '常见问题', url: ''}
+        {
+          text: '帮助中心',
+          url: ''
+        },
+        {
+          text: '购物指南',
+          url: ''
+        },
+        {
+          text: '物流售后问题',
+          url: ''
+        },
+        {
+          text: '常见问题',
+          url: ''
+        }
       ],
       listAbout: [
-        {text: '关于', url: ''},
-        {text: '我们', url: ''},
-        {text: '事件', url: ''},
-        {text: '艺术家招募', url: ''}
+        {
+          text: '关于',
+          url: ''
+        },
+        {
+          text: '我们',
+          url: ''
+        },
+        {
+          text: '事件',
+          url: ''
+        },
+        {
+          text: '艺术家招募',
+          url: ''
+        }
       ],
       listC: [
-        {text: '联系我们', url: ''},
-        {text: '邮箱2885603565@qq.com', url: ''},
-        {text: '店面地址', url: ''},
-        {text: '联系方式', url: ''}
+        {
+          text: '联系我们',
+          url: ''
+        },
+        {
+          text: '2885603565@qq.com',
+          url: ''
+        },
+        {
+          text: '店面地址',
+          url: ''
+        },
+        {
+          text: '联系方式',
+          url: ''
+        }
       ]
     }
   },
@@ -134,7 +170,7 @@ export default({
   .list-sec {
     justify-content: space-around;
     margin: 0 0 0 2.5rem;
-    width: 100vw;
+    width: 90vw;
   }
 
   .submit button {

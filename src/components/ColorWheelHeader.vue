@@ -28,7 +28,18 @@
 
 <script>
 export default {
+  mounted: function () {
+    var listLi = document.getElementsByTagName('li')
+    var navBar = document.getElementById('navBar')
 
+    for (let i = 0; i < listLi.length; i++) {
+      (function (i) {
+        listLi[i].onclick = function () {
+          navBar.className = 'collapse navbar-collapse navbar-right'
+        }
+      })(i)
+    }
+  }
 }
 </script>
 
