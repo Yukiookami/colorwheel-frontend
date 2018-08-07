@@ -1,12 +1,22 @@
 <template>
  <div id="home">
-  <h2>主页</h2>
- </div>
+   <banner></banner>
+   <news></news>
+   <artistlist></artistlist>
+</div>
 </template>
 
-<style scoped>
- #home{
-  width: 100%;
-  height: 600px;
- }
-</style>
+<script>
+import banner from "./colorwheel-home/banner"
+import news from "./colorwheel-home/news"
+import artistlist from "./colorwheel-home/artistlist"
+export default {
+  name: "home",
+  components: {
+    banner,
+    news,
+    artistlist
+  }
+}
+</script>
+
