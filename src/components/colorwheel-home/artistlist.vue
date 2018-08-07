@@ -21,7 +21,7 @@ h3{
     color:#ffffff;
 }
 span{
-    color:#ffffff; 
+    color:#ffffff;
     font-size:6px;
     margin-top:1.5%;
 }

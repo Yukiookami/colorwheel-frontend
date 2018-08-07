@@ -12,52 +12,49 @@
 
 </template>
 <script>
-export default{
-   data () {
-        return {
-            items:[
-                {Img:require('assets/NB-101.jpg')},
-                {Img:require('assets/NB-101.jpg')},
-                {Img:require('assets/NB-101.jpg')},
-                {Img:require('assets/NB-101.jpg')},
-                {Img:require('assets/NB-101.jpg')},
-                {Img:require('assets/NB-101.jpg')},
-                {Img:require('assets/NB-101.jpg')},
-                {Img:require('assets/NB-101.jpg')},
-                {Img:require('assets/NB-101.jpg')},
-                {Img:require('assets/NB-101.jpg')},
-                {Img:require('assets/NB-101.jpg')},
-                {Img:require('assets/NB-101.jpg')}
-                
-            ]
-        }
+export default {
+  data () {
+    return {
+      items: [
+        { Img: require('assets/NB-101.jpg') },
+        { Img: require('assets/NB-101.jpg') },
+        { Img: require('assets/NB-101.jpg') },
+        { Img: require('assets/NB-101.jpg') },
+        { Img: require('assets/NB-101.jpg') },
+        { Img: require('assets/NB-101.jpg') },
+        { Img: require('assets/NB-101.jpg') },
+        { Img: require('assets/NB-101.jpg') },
+        { Img: require('assets/NB-101.jpg') },
+        { Img: require('assets/NB-101.jpg') },
+        { Img: require('assets/NB-101.jpg') },
+        { Img: require('assets/NB-101.jpg') }
+      ]
     }
+  }
 }
 </script>
 <style scoped>
-h4{
-    font-size:19px;
+h4 {
+  font-size: 19px;
 }
-span{
-    font-size:12px;
+span {
+  font-size: 12px;
 }
 
 .news-list {
-    padding: 0;
-    list-style: none;
-    width: 70vw;
-    margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 70vw;
+  margin: 0 auto;
 }
 
 .news-list:after {
-    display: block;
-    content: '';
-    clear: both;
+  display: block;
+  content: "";
+  clear: both;
 }
 
 .news-list li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
-
 </style>
-

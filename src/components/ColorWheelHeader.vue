@@ -29,7 +29,6 @@ export default {
   mounted: function () {
     var listLi = document.getElementsByTagName('li')
     var navBar = document.getElementById('navBar')
-
     for (let i = 0; i < listLi.length; i++) {
       (function (i) {
         listLi[i].onclick = function () {
@@ -42,9 +41,9 @@ export default {
 </script>
 
 <style scoped>
-.navbar{
+/* .navbar{
   margin-bottom: 0;
-}
+} */
 .logo {
   position: absolute;
   top: 20px;

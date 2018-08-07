@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import banner from "./colorwheel-home/banner"
-import news from "./colorwheel-home/news"
-import artistlist from "./colorwheel-home/artistlist"
+import banner from './colorwheel-home/banner'
+import news from './colorwheel-home/news'
+import artistlist from './colorwheel-home/artistlist'
 export default {
-  name: "home",
+  name: 'home',
   components: {
     banner,
     news,
@@ -19,4 +19,8 @@ export default {
   }
 }
 </script>
-
+<style>
+.navbar{
+  margin-bottom: 0;
+}
+</style>
