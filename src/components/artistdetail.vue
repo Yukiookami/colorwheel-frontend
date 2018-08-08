@@ -17,7 +17,7 @@
     </figure>
     <figure class="works-show">
       <span class="tittle tittle-magin">{{tittle}}</span>
-      <arist-mo :content = 'pictureList' :className = 'className'></arist-mo>
+      <arist-mo :content = 'pictureList' :className = 'className' :layoutClassName = 'layoutClassName'></arist-mo>
     </figure>
     <div class="pos-box" :id= 'boxName' @click="hideBox">
       <span>More</span>
@@ -38,6 +38,7 @@ export default {
       tittle: '颜料块画廊-遇见系列',
       className: 'hide-box',
       boxName: '',
+      layoutClassName: 'show-box col-data-2 col-md-4 col-xs-6',
       informationList: [
         {msg: '2016  国际纤维艺术双年展 优秀奖'},
         {msg: '2012  回归与超越—第七届国际纤维艺术双年展 铜奖'},
