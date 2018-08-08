@@ -63,7 +63,7 @@ export default {
   width: 100%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1050px) {
   .col-data-2 {
     width: auto;
   }
