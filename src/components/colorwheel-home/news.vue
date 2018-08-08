@@ -34,6 +34,9 @@ export default {
 }
 </script>
 <style scoped>
+#newspro{
+  background-color: #ffffff;
+}
 h4 {
   font-size: 19px;
 }

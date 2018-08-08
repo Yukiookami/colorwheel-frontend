@@ -1,6 +1,6 @@
 <template>
 <section id="aristMo" :class="className">
-  <figure class="show-box col-data-2 col-md-4 col-xs-6" v-for="(item,index) in content" :key="index">
+  <figure :class="layoutClassName" v-for="(item,index) in content" :key="index">
     <router-link to="../artistdetail">
       <img :src="item.production">
     </router-link>
@@ -13,7 +13,7 @@
 <script>
 export default {
   name: 'aristMo',
-  props: ['content', 'className'],
+  props: ['content', 'className', 'layoutClassName'],
   methods: {
 
   }

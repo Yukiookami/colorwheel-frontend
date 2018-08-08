@@ -13,7 +13,7 @@
       </li>
     </ul>
   </nav>
-  <artist-mo :content = 'artistList' :className = 'className'></artist-mo>
+  <artist-mo :content = 'artistList' :className = 'className' :layoutClassName = 'layoutClassName'></artist-mo>
   <div class="pos-box" :id = 'boxName' @click="hideBox">
     <span>More</span>
     <img src= '../assets/images/more.png'>
@@ -32,6 +32,7 @@ export default({
       cooperationFlag: false,
       graduateFlag: false,
       className: 'hide-box',
+      layoutClassName: 'show-box col-data-2 col-md-4 col-xs-6',
       boxName: '',
       artistList: [
         {

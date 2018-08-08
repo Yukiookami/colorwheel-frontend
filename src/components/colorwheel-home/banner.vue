@@ -9,7 +9,7 @@
     </div>
 </div>
 </template>
-<style>
+<style scoped>
 #bannerall {
   background-size: 100% 100%;
   height: 90vh;
@@ -22,7 +22,7 @@
 }
 .more{
     border:1px solid #ffffff;
-    border-radius: 10px;
+    border-radius: 5px;
     color:#ffffff;
     margin-top:4%;
 }
@@ -38,9 +38,15 @@ h2{
 h5{
     font-size:16px;
 }
+@media (max-width: 992px) {
+ #bannerall {
+    height: 80vh;
+    background-size: 100% 100%;
+  }
+}
 @media (max-width: 767px) {
   #bannerall {
-    height: 40vh;
+    height: 30vh;
     background-size: 100% 100%;
   }
   h2 {

@@ -11,11 +11,12 @@
 #art{
     background-size: 100% 100%;
     background-image: url(../../assets/art.jpg);
-    height:50vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom:2%;
 }
 h3{
     color:#ffffff;
@@ -29,9 +30,14 @@ img{
     width:20%;
     height:20%;
 }
+@media (max-width: 992px) {
+ #art {
+    height:60vh;
+  }
+}
 @media (max-width: 767px) {
   #art {
-    height:40vh;
+    height:30vh;
   }
 }
 </style>
