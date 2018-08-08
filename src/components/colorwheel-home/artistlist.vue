@@ -11,7 +11,7 @@
 #art{
     background-size: 100% 100%;
     background-image: url(../../assets/art.jpg);
-    height: 80vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ img{
 }
 @media (max-width: 992px) {
  #art {
-    height:60vh;
+    height:50vh;
   }
 }
 @media (max-width: 767px) {
