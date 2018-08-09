@@ -32,6 +32,8 @@ export default {
   margin-top: 3rem;
   padding-bottom: 1rem;
   text-align: left;
+  background-color: #fafafa;
+  border-bottom: solid #FFF .3rem;
 }
 
 .tittle-box {
