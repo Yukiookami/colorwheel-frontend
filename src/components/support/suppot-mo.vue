@@ -33,7 +33,7 @@ export default {
   padding-bottom: 1rem;
   text-align: left;
   background-color: #fafafa;
-  border-bottom: dashed #FFF .5rem;
+  border-bottom: solid #FFF .3rem;
 }
 
 .tittle-box {
