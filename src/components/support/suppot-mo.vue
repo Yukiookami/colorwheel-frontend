@@ -32,7 +32,8 @@ export default {
   margin-top: 3rem;
   padding-bottom: 1rem;
   text-align: left;
-  border-bottom: dashed rgba(0, 0, 0, .2) .5rem;
+  background-color: #fafafa;
+  border-bottom: dashed #FFF .5rem;
 }
 
 .tittle-box {
