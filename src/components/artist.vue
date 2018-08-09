@@ -14,10 +14,12 @@
     </ul>
   </nav>
   <artist-mo :content = 'artistList' :className = 'className' :layoutClassName = 'layoutClassName'></artist-mo>
+  <!-- more隐藏用组件 -->
   <div class="pos-box" :id = 'boxName' @click="hideBox">
     <span>More</span>
     <img src= '../assets/images/more.png'>
   </div>
+  <!-- 隐藏用组件end -->
 </div>
 </template>
 
@@ -28,12 +30,14 @@ export default({
   name: 'artist',
   data () {
     return {
+      // more 隐藏用数据
+      boxName: '',
+      className: 'hide-box',
+      // 隐藏用数据end
       agencyFlag: true,
       cooperationFlag: false,
       graduateFlag: false,
-      className: 'hide-box',
       layoutClassName: 'show-box col-data-2 col-md-4 col-xs-6',
-      boxName: '',
       artistList: [
         {
           production: require('../assets/images/production.jpg'),
@@ -135,6 +139,12 @@ export default({
     }
   },
   methods: {
+    // more 隐藏函数
+    hideBox: function () {
+      this.className = ''
+      this.boxName = 'hide'
+    },
+    // 隐藏函数end
     changeAgency: function () {
       if (this.agencyFlag === true) {
         return
@@ -158,10 +168,6 @@ export default({
       this.graduateFlag = !this.graduateFlag
       this.agencyFlag = false
       this.cooperationFlag = false
-    },
-    hideBox: function () {
-      this.className = ''
-      this.boxName = 'hide'
     }
   },
   components: {
@@ -170,7 +176,23 @@ export default({
 })
 </script>
 
-<style scoped>
+<style>
+/* more 隐藏用类 */
+.pos-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 3rem;
+  margin: 0 auto 2rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#hide {
+  display: none;
+}
+/* 隐藏用类end*/
+
 a {
   color: #353535;
   text-decoration: none;
@@ -199,22 +221,8 @@ nav {
   height: 3rem;
 }
 
-.pos-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 3rem;
-  margin: 0 auto 2rem;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 .border-confirm {
   border-bottom: #353535 solid 1px;
-}
-
-#hide {
-  display: none;
 }
 
 @media (max-width: 768px) {
