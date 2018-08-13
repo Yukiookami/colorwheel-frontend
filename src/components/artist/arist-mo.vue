@@ -52,15 +52,15 @@ export default {
   height: 20rem;
 }
 
-.show-box image {
-  height: 153px;
-  width: 170px;
-}
-
 .hide-box {
   overflow: hidden;
   height: 60rem;
   width: 100%;
+}
+
+.show-box image {
+  height: 153px;
+  width: 170px;
 }
 
 @media (max-width: 1050px) {

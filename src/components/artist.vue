@@ -176,7 +176,7 @@ export default({
 })
 </script>
 
-<style>
+<style scoped>
 /* more 隐藏用类 */
 .pos-box {
   display: flex;
