@@ -4,7 +4,7 @@
       {{meetingname}}
       <span>- {{exoverview}}</span>
       </div>
-      <div class="exover">
+      <div :class = 'className'>
      <ul class="exover-list">
     <li v-for="(item,index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
         <img class="eimg" :src="item.Img" />
@@ -27,11 +27,19 @@ export default {
     return {
       // more 隐藏用数据
       boxName: '',
-      className: 'hide-box',
+      className: 'hide-box exover',
       // 隐藏用数据end
       exoverview: '颜料块画廊2018春季展概览',
       meetingname: '第41届中国(广州)国际家居博览会',
       items: [
+        {
+          Img: require('assets/images/NB-108.jpg'),
+          exovername: 'NB-108'
+        },
+        {
+          Img: require('assets/images/NB-108.jpg'),
+          exovername: 'NB-108'
+        },
         {
           Img: require('assets/images/NB-108.jpg'),
           exovername: 'NB-108'
@@ -62,7 +70,7 @@ export default {
   methods: {
     // more 隐藏函数
     hideBox: function () {
-      this.className = ''
+      this.className = 'exover'
       this.boxName = 'hide'
     }
     // 隐藏函数end
@@ -84,7 +92,7 @@ export default {
 
 .hide-box {
   overflow: hidden;
-  height: 60rem;
+  height: 59rem;
   width: 100%;
 }
 
