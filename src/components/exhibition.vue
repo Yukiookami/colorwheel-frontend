@@ -21,7 +21,7 @@ export default({
     return {
       // more 隐藏用数据
       boxName: '',
-      className: 'hide-box',
+      className: 'hide-box ex-list',
       // 隐藏用数据end
       exhibitionlistdata: [
         {
@@ -113,7 +113,6 @@ span{
   display: flex;
   justify-content: space-between;
   align-content: center;
-
   padding: 0;
 }
 </style>

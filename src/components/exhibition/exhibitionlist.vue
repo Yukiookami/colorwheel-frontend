@@ -1,7 +1,7 @@
 <template>
 <section id="exhibition-list" :class="className">
-  <figure :class="layoutClassName" v-for="(item,index) in content" :key="index">
-    <router-link to="">
+  <figure v-for="(item,index) in content" :key="index">
+    <router-link to="../exdetail">
         <div class="ex-pic">
       <img :src="item.exhibition">
         <div class="ex-list">
