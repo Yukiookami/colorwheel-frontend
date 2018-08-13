@@ -2,7 +2,7 @@
 <div id="navBox">
   <ul id="navBar" :class='className'>
     <li v-for="(item,index) in storeList" :key="index">
-      <router-link :to="item.url">{{item.tittle}}</router-link>
+      <router-link :to="item.url" class="click">{{item.tittle}}</router-link>
     </li>
   </ul>
   <div class="pos-box" :id = 'boxName' @click="hideBox">
@@ -71,5 +71,9 @@ export default {
 
 #navBox {
   border-bottom: rgba(0, 0, 0, .2) solid 1px;
+}
+
+.click:active {
+  border-bottom: 1px solid #353535;
 }
 </style>

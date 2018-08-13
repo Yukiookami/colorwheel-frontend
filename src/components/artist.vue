@@ -3,13 +3,13 @@
   <nav>
     <ul>
       <li :class= "agencyFlag? 'border-confirm': ''">
-        <a @click= "changeAgency">代理艺术家</a>
+        <router-link @click= "changeAgency">代理艺术家</router-link>
       </li>
       <li :class= "cooperationFlag? 'border-confirm': ''">
-        <a @click= "changecooperation">合作艺术家</a>
+        <router-link @click= "changecooperation">合作艺术家</router-link>
       </li>
       <li :class= "graduateFlag? 'border-confirm': ''">
-        <a @click= "changegraduate">毕业生</a>
+        <router-link @click= "changegraduate">毕业生</router-link>
       </li>
     </ul>
   </nav>

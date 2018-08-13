@@ -54,7 +54,7 @@ export default {
 
 .hide-box {
   overflow: hidden;
-  height: 60rem;
+  max-height: 60rem;
   width: 100%;
 }
 

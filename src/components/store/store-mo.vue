@@ -58,7 +58,7 @@ export default {
 
 .hide-box {
   overflow: hidden;
-  height: 75rem;
+  max-height: 75rem;
   width: 100%;
 }
 
@@ -86,6 +86,7 @@ export default {
 }
 
 .information-box {
+  align-items: center;
   flex-direction: column;
   margin: 1rem auto;
 }
