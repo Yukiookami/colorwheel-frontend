@@ -12,7 +12,6 @@
 
 <script>
 export default {
-  name: 'aristMo',
   props: ['content', 'className', 'layoutClassName'],
   methods: {
 
