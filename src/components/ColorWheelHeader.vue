@@ -18,6 +18,7 @@
     <li><a href="/artist">艺术家<br/>ARTIST</a></li>
     <li><router-link to="/exhibition">展览信息<br/>EXHIBITION</router-link></li>
     <li><router-link to="/support">获得支持<br/>SUPPORT</router-link></li>
+    <li><router-link to="/store">商城<br/>STORE</router-link></li>
   </ul>
 </div>
 </div>

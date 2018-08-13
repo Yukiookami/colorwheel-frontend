@@ -8,6 +8,8 @@ import artist from './components/artist'
 import exhibition from './components/exhibition'
 import artistdetail from './components/artistdetail'
 import exdetail from './components/exdetail'
+import store from './components/store'
+import storeDetail from './components/store-detail'
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 
@@ -20,7 +22,9 @@ const router = new VueRouter({
     {path: '/artist', component: artist},
     {path: '/exhibition', component: exhibition},
     {path: '/artistdetail', component: artistdetail},
-    {path: '/exdetail', component: exdetail}
+    {path: '/exdetail', component: exdetail},
+    {path: '/store', component: store},
+    {path: '/store-detail', component: storeDetail}
   ]
 })
 /* eslint-disable no-new */
