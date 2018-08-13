@@ -113,7 +113,6 @@ span{
   display: flex;
   justify-content: space-between;
   align-content: center;
-
   padding: 0;
 }
 </style>

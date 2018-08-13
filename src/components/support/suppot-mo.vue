@@ -15,7 +15,7 @@
             v-if="answerItem.show == 2">
           {{answerItem.msg}}
         </li>
-      </ul>
+       </ul>
     </div>
   </div>
 </div>
