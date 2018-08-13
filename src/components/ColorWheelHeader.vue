@@ -3,7 +3,7 @@
      <router-link to="/">
      <img  class="logo" src="../assets/logo.png">
     </router-link>
-<div class="container">
+<div>
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
 <span class="icon-bar"></span>
@@ -42,9 +42,6 @@ export default {
 </script>
 
 <style scoped>
-/* .navbar{
-  margin-bottom: 0;
-} */
 .logo {
   position: absolute;
   top: 20px;
@@ -84,6 +81,11 @@ export default {
   color: #666;
   vertical-align: middle;
   text-decoration: none;
+}
+@media (max-width: 992px) {
+  .logo {
+    left: 6%;
+  }
 }
 @media (max-width: 767px) {
   .logo {
