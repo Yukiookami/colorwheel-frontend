@@ -2,7 +2,9 @@
 <div>
   <div :class="className">
     <div v-for="(item,index) in buyList" :key="index" class="col-data-2 col-md-4 col-sm-6 information-box">
-      <img :src='item.picUrl' class="main-img">
+      <router-link :to='item.buy'>
+        <img :src='item.picUrl' class="main-img">
+      </router-link>
       <div>
         <div class="sm-box store-border">
           <span>{{item.tittle}}</span>
