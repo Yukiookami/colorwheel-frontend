@@ -42,6 +42,9 @@ export default {
 </script>
 
 <style scoped>
+.navbar-right {
+  margin-right: 0 !important;
+}
 .logo {
   position: absolute;
   top: 20px;
@@ -87,7 +90,7 @@ export default {
     left: 6%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .logo {
     height: 3rem;
     top: 10px;

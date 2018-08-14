@@ -29,7 +29,7 @@ export default {
           name: 'Down Miller',
           headUrl: require('../assets/images/store-head.jpg'),
           price: 35000,
-          buy: ''
+          buy: '/storedetail'
         },
         {
           picUrl: require('../assets/images/store-mo.jpg'),
