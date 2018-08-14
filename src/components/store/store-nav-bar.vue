@@ -70,6 +70,8 @@ export default {
 }
 
 #navBox {
+  margin: 0 auto;
+  width: 70vw;
   border-bottom: rgba(0, 0, 0, .2) solid 1px;
 }
 
