@@ -90,6 +90,12 @@ ul {
   width: 983px;
   height:410px;
 }
+@media (max-width: 1400px) {
+ .productimg {
+  width: 855px;
+  height:417px;
+}
+}
 @media (max-width: 1024px) {
  .productimg {
   width: 716px;
