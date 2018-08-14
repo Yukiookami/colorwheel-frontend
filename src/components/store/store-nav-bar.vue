@@ -60,8 +60,9 @@ export default {
 }
 
 #navBar li {
-  margin-right: 2rem;
+  margin-right: 4.5rem;
   line-height: 2.5rem;
+  margin-left:.5rem;
 }
 
 #navBar a {
@@ -71,9 +72,25 @@ export default {
 
 #navBox {
   border-bottom: rgba(0, 0, 0, .2) solid 1px;
+  margin: 0 auto;
+  width: 70vw;
 }
 
 .click:active {
   border-bottom: 1px solid #353535;
+}
+@media (max-width: 992px) {
+#navBar li {
+  margin-right: 3rem;
+  line-height: 2.5rem;
+  margin-left:1rem;
+}
+}
+@media (max-width: 767px) {
+ #navBar li {
+  margin-right: 1rem;
+  line-height: 2.5rem;
+  margin-left:1.2rem;
+}
 }
 </style>
