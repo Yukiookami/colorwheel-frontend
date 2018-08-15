@@ -3,7 +3,7 @@
   <div class="line">
     <nav>
       <span>{{Num}}</span>
-      <router-link to="">
+      <router-link to="../model">
         <button class="buy">购买</button>
       </router-link>
     </nav>
@@ -11,7 +11,7 @@
   <div class="commodity">
     <img :src='bannerImg'>
     <span class="big-font">{{Num}}</span>
-    <router-link to="">
+    <router-link to="../model">
       <button class="buy big-font">购买</button>
     </router-link>
     <div v-html="describe" class="text-box"></div>
