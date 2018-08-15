@@ -3,7 +3,7 @@
   <div class="line">
     <nav>
       <span>{{Num}}</span>
-      <router-link to="">
+      <router-link to="../custom">
         <button class="buy">购买</button>
       </router-link>
     </nav>

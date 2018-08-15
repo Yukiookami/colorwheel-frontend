@@ -10,6 +10,7 @@ import artistdetail from './components/artistdetail'
 import exdetail from './components/exdetail'
 import store from './components/store'
 import storedetail from './components/storedetail'
+import custom from './components/custom'
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 
@@ -24,7 +25,8 @@ const router = new VueRouter({
     {path: '/artistdetail', component: artistdetail},
     {path: '/exdetail', component: exdetail},
     {path: '/store', component: store},
-    {path: '/storedetail', component: storedetail}
+    {path: '/storedetail', component: storedetail},
+    {path: '/custom', component: custom}
   ]
 })
 /* eslint-disable no-new */
