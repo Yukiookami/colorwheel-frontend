@@ -6,17 +6,21 @@
         <router-link to="../storedetail" @click= "changeAgency">编号</router-link>
       </li>
       <li :class= "picframe? 'border-confirm': ''">
-        <router-link to="" @click= "changecooperation">画框</router-link>
+        <router-link to="../model" @click= "changecooperation">画框</router-link>
       </li>
       <li :class= "stocksize? 'border-confirm': ''">
         <router-link to="" @click= "changegraduate">常规尺寸</router-link>
       </li>
     </ul>
   </nav>
+  <modelimg></modelimg>
+     <div class="csize">
+         <span>定制尺寸</span></div>
     </div>
 </template>
 
 <script>
+import modelimg from '../components/customsize/modelimg'
 export default {
   name: 'custom',
   data () {
@@ -52,7 +56,9 @@ export default {
       this.picframe = false
     }
   },
-  components: {}
+  components: {
+    modelimg
+  }
 }
 </script>
 <style scoped>
@@ -89,7 +95,13 @@ nav {
 .border-confirm {
   border-bottom: #353535 solid 1px;
 }
-
+.csize{
+  border-bottom: #353535 solid 1px;
+  width:5rem;
+  padding-bottom:.8rem;
+  padding-top:5rem;
+  margin:0 auto;
+}
 @media (max-width: 768px) {
   nav {
     display: flex;
