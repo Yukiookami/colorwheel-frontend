@@ -13,21 +13,37 @@
       </li>
     </ul>
   </nav>
-  <modelimg></modelimg>
+    <modelimg></modelimg>
      <div class="csize">
-         <span>定制尺寸</span></div>
+         <span>定制尺寸</span>
+    </div>
+    <vueCropper
+        ref="cropper"
+        autoCrop="true"
+        :img="option.img"
+        :outputSize="option.size"
+        :outputType="option.outputType"
+        style="width:388px; height: 588px; margin: 0 auto;margin-top:4rem;"
+        ></vueCropper>
+        <span class="crop-info"></span>
     </div>
 </template>
 
 <script>
 import modelimg from '../components/customsize/modelimg'
+import vueCropper from 'vue-cropper'
 export default {
   name: 'custom',
   data () {
     return {
       serialnumber: false,
       picframe: false,
-      stocksize: true
+      stocksize: true,
+      option: {
+        img: require('../assets/images/NB-124.jpg'),
+        size: 1,
+        outputType: 'jpg'
+      }
     }
   },
   methods: {
@@ -57,7 +73,8 @@ export default {
     }
   },
   components: {
-    modelimg
+    modelimg,
+    vueCropper
   }
 }
 </script>
@@ -107,6 +124,11 @@ nav {
     display: flex;
     justify-content: center;
     margin: 0 0 5rem 0;
+  }
+}
+@media (max-width: 992px) {
+  .csize {
+    padding-top:0;
   }
 }
 </style>

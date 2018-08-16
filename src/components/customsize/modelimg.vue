@@ -28,6 +28,7 @@
           </div>
         </figure>
       </div>
+
 </template>
 <style scoped>
 .model-img-box {
@@ -45,7 +46,7 @@
 }
 .bottom-size {
   bottom: -35px;
-  left: 34%;
+  left: 30%;
 }
 .model-border-box {
   display: flex;
@@ -72,11 +73,35 @@
   border: 1px solid rgba(0, 0, 0, .3);
   position: absolute;
   bottom:-70px;
-  left: 36%;
+  left: 30%;
 }
 a {
   color: #353535;
   text-decoration: none;
 }
-
+@media (max-width: 767px) {
+.model-img-box{
+     display:flex;
+     flex-direction: column;
+ }
+ figure{
+     margin-top:0rem;
+ }
+}
+@media (max-width: 992px) {
+.model-img-box{
+     width:80vw;
+     margin:2rem auto;
+ }
+ figure{
+     margin-bottom:7rem;
+ }
+ .bottom-size {
+     left: 40%;
+}
+.choose {
+  bottom:-70px;
+  left: 40%;
+}
+}
 </style>
