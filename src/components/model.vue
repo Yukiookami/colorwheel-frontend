@@ -133,7 +133,7 @@ export default {
       if (this.sizeCheckNum !== 1 || this.borderCheckNum !== 1) {
         alert('请选择画框与尺寸')
       } else {
-        window.location.href = '/'
+        window.location.href = '/buy'
       }
     }
   }
