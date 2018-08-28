@@ -87,5 +87,9 @@ text-decoration: none;
   .ex-list{
       margin-top:4vh;
   }
+  #exhibition-list{
+    margin:0;
+    padding:0;
+  }
 }
 </style>
