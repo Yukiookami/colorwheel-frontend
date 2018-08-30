@@ -118,7 +118,7 @@
                 总价: <span class="total-price">{{totalMoney | totalMoney('元')}}</span>
               </div>
               <div class="next-btn-wrap">
-                <a href="javascrit:;" class="btn btn--red" style="width: 200px" @click="showAddressPage">确认支付</a>
+                <router-link to="/order"><a href="javascrit:;" class="btn btn--red" style="width: 200px" @click="showAddressPage">确认支付</a></router-link>
               </div>
             </div>
           </div>
