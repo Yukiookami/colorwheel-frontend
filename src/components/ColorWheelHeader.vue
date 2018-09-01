@@ -1,4 +1,4 @@
-<template>
+`<template>
 <div class="navbar navbar-inverse" >
      <router-link to="/">
      <img  class="logo" src="../assets/logo.png">
