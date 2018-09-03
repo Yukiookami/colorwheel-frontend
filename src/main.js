@@ -17,6 +17,7 @@ import model from './components/model'
 import shopcart from './components/shopcart'
 import buy from './components/buy'
 import orderpay from './components/orderpay'
+import check from './components/check'
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 
@@ -36,7 +37,8 @@ const router = new VueRouter({
     {path: '/model', component: model},
     {path: '/shopcart', component: shopcart},
     {path: '/buy', component: buy},
-    {path: '/orderpay', component: orderpay}
+    {path: '/orderpay', component: orderpay},
+    {path: '/check', component: check}
   ]
 })
 

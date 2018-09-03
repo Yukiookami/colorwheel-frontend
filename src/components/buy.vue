@@ -23,7 +23,11 @@
       </div>
     </div>
     <div>
-      <button class="buy-button black">立即购买</button>
+      <router-link to="/check">
+        <button class="buy-button black">
+          立即购买
+        </button>
+      </router-link>
       <router-link to="/shopcart"><button class="buy-button white">加入购物车</button></router-link>
     </div>
     <div class="share">
