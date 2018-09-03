@@ -19,6 +19,9 @@
     <li><router-link to="/exhibition">展览信息<br/>EXHIBITION</router-link></li>
     <li><router-link to="/support">获得支持<br/>SUPPORT</router-link></li>
     <li><router-link to="/store">商城<br/>STORE</router-link></li>
+    <!-- <li class="login">
+    <div class="bodercss"><span>登录</span><i> </i></div>
+    </li> -->
   </ul>
 </div>
 </div>
@@ -42,6 +45,24 @@ export default {
 </script>
 
 <style scoped>
+ /* .bodercss i{
+    display:inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #ffffff;
+    position:relative;
+    top:0px;
+    margin-top:30px;
+    margin-left:5px;
+}
+.login{
+  margin-left:40px;
+}
+.bodercss span{
+  color:#ffffff;
+} */
 .navbar-right {
   margin-right: 0 !important;
 }
