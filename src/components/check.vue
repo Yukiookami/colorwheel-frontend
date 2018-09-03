@@ -6,14 +6,14 @@
   <div class="title-box">新增收货地址</div>
   <section class="details-box">
     <section>
-      <div class="flex-box">
+      <div class="flex-box-place">
         <span>所在地区</span>
         <div>
           <v-distpicker class="select-box"></v-distpicker>
         </div>
       </div>
     </section>
-    <section class="flex-box">
+    <section class="flex-box-place">
       <span>详细地址</span>
       <textarea class="textarea-box" placeholder="请输入您的详细地址"></textarea>
     </section>
@@ -110,7 +110,7 @@ export default {
   padding: .2rem 0;
   font-size: 14px;
   height: auto;
-  width: 6.5rem;
+  width: 5.5rem;
 }
 
 #checkPage {
@@ -148,6 +148,11 @@ nav h2 {
 }
 
 .flex-box {
+  display: flex;
+  align-items: center;
+}
+
+.flex-box-place {
   display: flex;
   align-items: center;
 }
@@ -212,6 +217,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 .com-box {
+  margin-bottom: 2rem;
   padding: 0;
 }
 
@@ -286,23 +292,40 @@ input[type=checkbox], input[type=radio] {
   }
 
   .imfor-box {
-    align-items: center;
+    align-items: flex-start;
     height: 10rem;
+    width: 10rem;
   }
 
   .commodity-imfor {
     flex-direction: column;
-    width: auto;
+    align-items: flex-start;
+    width: 10rem;
     height: 6rem;
   }
 
   .textarea-box {
-    margin: 0;
-    width: 100%;
+    margin: 0 0 0 1%;
+    width: 65%;
   }
 
   .show-com {
     margin-left: 0;
+  }
+
+  .select-box {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .flex-box-place {
+    display: flex;
+    align-items: center;
+    width: 85vw;
+  }
+
+  .ps {
+    height: 7rem;
   }
 }
 </style>

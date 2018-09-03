@@ -1,42 +1,53 @@
 <template>
-<div id="buySec">
-  <img class="size-change" :src="imgUrl">
-  <div class="imfor">
-    <div>
-      <h3>{{name}}</h3>
-      <h3>&yen;{{price}}</h3>
-    </div>
-    <div class="size-sec">
-      <span>材质：{{texture}}</span>
-      <span>画框：{{border}}</span>
-      <span>尺寸：{{size}}</span>
-      <div class="num">
-        数量：
-        <div class="symbol" @click="sum">
-          <span class="add-mid"></span>
-        </div>
-        <span class="symbol">{{num}}</span>
-        <div class="symbol" @click="add">
-          <span class="add-top"></span>
-          <span class="add-mid"></span>
+<div>
+  <div id="buySec">
+    <img class="size-change" :src="imgUrl">
+    <div class="imfor">
+      <div>
+        <h3>{{name}}</h3>
+        <h3>&yen;{{price}}</h3>
+      </div>
+      <div class="size-sec">
+        <span>材质：{{texture}}</span>
+        <span>画框：{{border}}</span>
+        <span>尺寸：{{size}}</span>
+        <div class="num">
+          数量：
+          <div class="symbol" @click="sum">
+            <span class="add-mid"></span>
+          </div>
+          <span class="symbol">{{num}}</span>
+          <div class="symbol" @click="add">
+            <span class="add-top"></span>
+            <span class="add-mid"></span>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <router-link to="/check">
-        <button class="buy-button black">
-          立即购买
-        </button>
-      </router-link>
-      <router-link to="/shopcart"><button class="buy-button white">加入购物车</button></router-link>
-    </div>
-    <div class="share">
-      <span>分享至</span>
-      <img src="../assets/images/share-wechat.png">
-      <img src="../assets/images/share-webo.png">
-      <img src="../assets/images/share-dou.png">
+      <div>
+        <router-link to="/check">
+          <button class="buy-button black">
+            立即购买
+          </button>
+        </router-link>
+        <router-link to="/shopcart"><button class="buy-button white">加入购物车</button></router-link>
+      </div>
+      <div class="share">
+        <span>分享至</span>
+        <img src="../assets/images/share-wechat.png">
+        <img src="../assets/images/share-webo.png">
+        <img src="../assets/images/share-dou.png">
+      </div>
     </div>
   </div>
+  <section class="about-other">
+    <h3 class="title-h3">相关作品展示</h3>
+    <figure class="about-box">
+      <div class="about-img" v-for="(item,index) in imgList" :key="index">
+        <img :src="item.url">
+        <span>{{item.name}}</span>
+      </div>
+    </figure>
+  </section>
 </div>
 </template>
 
@@ -50,7 +61,25 @@ export default {
       texture: '晶瓷',
       border: '金色铝合金',
       size: '77X117cm',
-      num: '1'
+      num: '1',
+      imgList: [
+        {
+          url: require('../assets/images/stoImg.jpg'),
+          name: 'NB-124'
+        },
+        {
+          url: require('../assets/images/stoImg.jpg'),
+          name: 'NB-124'
+        },
+        {
+          url: require('../assets/images/stoImg.jpg'),
+          name: 'NB-124'
+        },
+        {
+          url: require('../assets/images/stoImg.jpg'),
+          name: 'NB-124'
+        }
+      ]
     }
   },
   methods: {
@@ -152,9 +181,51 @@ export default {
   background-color: rgba(0, 0, 0, .3);
 }
 
+.about-other {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 50vw;
+}
+
+.about-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.about-img img {
+  height: 350px;
+  width: 225px;
+}
+
+.title-h3 {
+  display: block;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  width: 100%;
+  text-align: left;
+}
+
 @media (max-width: 2200px) {
   #buySec {
     width: 50vw;
+  }
+  #buySec {
+    padding: 5rem 0;
+  }
+
+  .imfor {
+    margin-top: 2rem;
   }
 }
 
@@ -170,14 +241,9 @@ export default {
   }
 }
 
-@media (max-width: 2200px) {
+@media (max-width: 1100px) {
   #buySec {
     flex-direction: column;
-    padding: 5rem 0;
-  }
-
-  .imfor {
-    margin-top: 2rem;
   }
 }
 
@@ -185,6 +251,21 @@ export default {
   .size-change {
     width: 300px;
     height: 500px;
+  }
+}
+
+@media (max-width: 995px) {
+  .about-box {
+    justify-content: center;
+  }
+
+  .about-img img {
+    width: 150px;
+    height: 250px;
+  }
+
+  .share {
+    width: 60%;
   }
 }
 </style>
