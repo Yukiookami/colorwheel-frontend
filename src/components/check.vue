@@ -292,13 +292,15 @@ input[type=checkbox], input[type=radio] {
   }
 
   .imfor-box {
-    align-items: center;
+    align-items: flex-start;
     height: 10rem;
+    width: 10rem;
   }
 
   .commodity-imfor {
     flex-direction: column;
-    width: auto;
+    align-items: flex-start;
+    width: 10rem;
     height: 6rem;
   }
 
@@ -319,7 +321,7 @@ input[type=checkbox], input[type=radio] {
   .flex-box-place {
     display: flex;
     align-items: center;
-    width: 90vw;
+    width: 85vw;
   }
 
   .ps {
