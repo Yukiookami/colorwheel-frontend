@@ -12,16 +12,13 @@
 </button>
 </div>
 <div class="collapse navbar-collapse navbar-right" id="navBar">
-  <ul class="nav navbar-nav" :style="{ margin: '7.5px 0' }">
+  <ul class="nav navbar-nav nav-box">
     <li><router-link to="/">首页<br/>HOME</router-link></li>
     <li><router-link to="/newproduct">新品季<br/>NEW</router-link></li>
     <li><a href="/artist">艺术家<br/>ARTIST</a></li>
     <li><router-link to="/exhibition">展览信息<br/>EXHIBITION</router-link></li>
     <li><router-link to="/support">获得支持<br/>SUPPORT</router-link></li>
     <li><router-link to="/store">商城<br/>STORE</router-link></li>
-    <!-- <li class="login">
-    <div class="bodercss"><span>登录</span><i> </i></div>
-    </li> -->
   </ul>
 </div>
 </div>
@@ -45,31 +42,17 @@ export default {
 </script>
 
 <style scoped>
- /* .bodercss i{
-    display:inline-block;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 10px solid #ffffff;
-    position:relative;
-    top:0px;
-    margin-top:30px;
-    margin-left:5px;
+.nav-box {
+  margin: 7.5px 20vw 7.5px 0;
 }
-.login{
-  margin-left:40px;
-}
-.bodercss span{
-  color:#ffffff;
-} */
+
 .navbar-right {
   margin-right: 0 !important;
 }
 .logo {
   position: absolute;
   top: 20px;
-  left: 15%;
+  left: 19%;
 }
 .header {
   width: 100%;
@@ -106,12 +89,38 @@ export default {
   vertical-align: middle;
   text-decoration: none;
 }
+@media (max-width: 1180px) {
+  .logo {
+    left: 10%;
+  }
+
+  .nav-box {
+    margin: 7.5px 10vw 7.5px 0;
+  }
+}
 @media (max-width: 992px) {
   .logo {
     left: 6%;
   }
+
+  .nav-box {
+    margin: 7.5px 7vw 7.5px 0;
+  }
 }
+
+@media (max-width: 836px) {
+  .nav-box {
+    margin: 7.5px 2vw 7.5px 0;
+  }
+}
+
 @media (max-width: 768px) {
+  .nav>li>a {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 767px) {
   .logo {
     height: 3rem;
     top: 10px;
