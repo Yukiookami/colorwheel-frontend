@@ -31,9 +31,9 @@
       <div class="click-flex-box margin-media">
         <input type="checkbox"><span>设为默认地址</span>
       </div>
-      <button class="save-button">
+     <router-link to="/orderpay"> <button class="save-button">
         保存地址
-      </button>
+      </button></router-link>
     </section>
   </section>
   <div class="title-box">新增收货地址</div>
