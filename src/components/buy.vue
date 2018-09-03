@@ -245,12 +245,14 @@ export default {
   #buySec {
     flex-direction: column;
   }
-}
 
-@media (max-width: 410px) {
-  .size-change {
-    width: 300px;
-    height: 500px;
+  .imfor {
+    text-align: center;
+    align-items: center;
+  }
+
+  .size-sec {
+    align-items: center;
   }
 }
 
@@ -266,6 +268,19 @@ export default {
 
   .share {
     width: 60%;
+  }
+}
+
+@media (max-width: 485px) {
+  .buy-button {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .size-change {
+    width: 300px;
+    height: 500px;
   }
 }
 </style>
