@@ -8,24 +8,9 @@
     <section>
       <div class="flex-box">
         <span>所在地区</span>
-        <select class="select-box">
-          <option selected>请选择省份</option>
-          <option v-for="(itemP,indexP) in placeList" :key="indexP">
-            {{itemP.place}}
-          </option>
-        </select>
-        <select class="select-box" >
-          <option selected>请选择地区</option>
-          <option v-for="(itemC,indexC) in cityList" :key="indexC">
-            {{itemC.city}}
-          </option>
-        </select>
-        <select class="select-box">
-          <option selected>请选择区县</option>
-          <option v-for="(itemA,indexA) in areaList" :key="indexA">
-            {{itemA.area}}
-          </option>
-        </select>
+        <div>
+          <v-distpicker class="select-box"></v-distpicker>
+        </div>
       </div>
     </section>
     <section class="flex-box">
@@ -81,7 +66,10 @@
 </template>
 
 <script>
+import VDistpicker from 'v-distpicker'
+
 export default {
+  components: { VDistpicker },
   data () {
     return {
       placeList: [
@@ -118,6 +106,13 @@ export default {
 </script>
 
 <style>
+.distpicker-address-wrapper select {
+  padding: .2rem 0;
+  font-size: 14px;
+  height: auto;
+  width: 6.5rem;
+}
+
 #checkPage {
   margin: 0 auto;
   width: 60%;
@@ -257,6 +252,10 @@ input[type=checkbox], input[type=radio] {
 }
 
 @media (max-width: 840px) {
+  #checkPage {
+    width: 80%;
+  }
+
   .flex-box {
     flex-direction: column;
   }
@@ -300,6 +299,10 @@ input[type=checkbox], input[type=radio] {
   .textarea-box {
     margin: 0;
     width: 100%;
+  }
+
+  .show-com {
+    margin-left: 0;
   }
 }
 </style>

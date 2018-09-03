@@ -1,6 +1,6 @@
 <template>
 <div id="buySec">
-  <img :src="imgUrl">
+  <img class="size-change" :src="imgUrl">
   <div class="imfor">
     <div>
       <h3>{{name}}</h3>
@@ -178,6 +178,13 @@ export default {
 
   .imfor {
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .size-change {
+    width: 300px;
+    height: 500px;
   }
 }
 </style>
