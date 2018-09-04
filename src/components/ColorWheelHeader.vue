@@ -19,7 +19,11 @@
     <li><router-link to="/exhibition">展览信息<br/>EXHIBITION</router-link></li>
     <li><router-link to="/support">获得支持<br/>SUPPORT</router-link></li>
     <li><router-link to="/store">商城<br/>STORE</router-link></li>
+    <li class="logn-in">
+      <img src="../assets/images/login.png">
+    </li>
   </ul>
+
 </div>
 </div>
 </div>
@@ -42,6 +46,17 @@ export default {
 </script>
 
 <style scoped>
+.logn-in{
+  display:flex;
+  justify-content: flex-end;
+  margin-top:1.5rem;
+  
+}
+.logn-in img{
+  width:30px;
+  height:30px;
+  margin-left:1rem;
+}
 .nav-box {
   margin: 7.5px 20vw 7.5px 0;
 }
@@ -125,5 +140,14 @@ export default {
     height: 3rem;
     top: 10px;
   }
+  .logn-in{
+  display:flex;
+  justify-content: center;
+  margin-top:1.5rem;
+}
+  .logn-in img{
+  width:30px;
+  height:30px;
+}
 }
 </style>
