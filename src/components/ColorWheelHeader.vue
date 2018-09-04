@@ -50,7 +50,6 @@ export default {
   display:flex;
   justify-content: flex-end;
   margin-top:1.5rem;
-  
 }
 .logn-in img{
   width:30px;
