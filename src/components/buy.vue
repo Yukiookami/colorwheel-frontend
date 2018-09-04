@@ -101,7 +101,6 @@ export default {
 #buySec {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 0 auto;
   width: 35vw;
 }
@@ -230,20 +229,33 @@ export default {
 }
 
 @media (max-width: 1560px) {
+  .about-other {
+    width: 60vw;
+  }
+
   #buySec {
     width: 60vw;
   }
 }
 
 @media (max-width: 1300px) {
+  .about-other {
+    width: 70vw;
+  }
+
   #buySec {
     width: 70vw;
   }
 }
 
 @media (max-width: 1100px) {
+  .about-other {
+    width: 50vw;
+  }
+
   #buySec {
     flex-direction: column;
+    align-items: center;
   }
 
   .imfor {
